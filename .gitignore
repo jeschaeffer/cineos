@@ -328,3 +328,12 @@ celerybeat-schedule.*
 # React/Vue (if applicable)
 /build
 /dist
+
+# Cursor AI rules
+.cursorrules
+
+# Entity-Relationship Diagram
+.erDiagram
+
+# User Flow Diagram
+.userflow

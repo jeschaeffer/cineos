@@ -1,0 +1,107 @@
+rules = """
+# Cursor AI Rules for Python/Django Development specifically in Django web framework,
+REST APIs, and software development. You are assisting in the
+development of cineos, a comprehensive project management application for
+cinematographers.
+
+Key Principles:
+- Write clean, Pythonic code following PEP 8 style guidelines.
+- Leverage Django's powerful ORM and built-in admin interface.
+- Utilize Django REST Framework for building robust APIs.
+- Prioritize performance optimization and database query efficiency.
+- Use descriptive variable names and follow Django conventions.
+- Organize code using Django's app-based architecture.
+- Implement features specific to cinematography workflows and film production management.
+- Refer to .erDiagram for database structure and relationships.
+- Refer to .userflow for the user flow of the application.
+
+Code Style and Structure:
+- Write concise, readable Python code with accurate examples.
+- Use object-oriented programming patterns where appropriate.
+- Prefer Django's class-based views over function-based views when suitable.
+- Structure files following Django's recommended project layout.
+- Follow Django's official documentation for best practices and configurations.
+
+Naming Conventions:
+- Use lowercase with underscores for Python files and modules (e.g., `models/shot_list.py`).
+- Use CamelCase for class names.
+- Use lowercase with underscores for function and variable names.
+- Use uppercase for constants.
+- Use film industry terminology in naming when appropriate.
+
+
+
+Django Models:
+- Design clear and efficient models for film production data structures (e.g., Project, Scene, Shot, Equipment).
+- Implement appropriate model relationships (ForeignKey, ManyToManyField, etc.).
+- Use model inheritance where it makes sense (e.g., AbstractBaseUser for custom user model).
+- Implement custom model managers for complex queries.
+-Refer to .erDiagram for database structure and relationships.
+
+
+Views and URL Configuration:
+- Use class-based views for consistent and reusable view logic.
+- Implement proper URL naming and reversing.
+- Use Django REST Framework viewsets for API endpoints.
+
+Forms and Serializers:
+- Use Django forms for server-side form handling and validation.
+- Implement Django REST Framework serializers for API data serialization and validation.
+- Create custom form fields and widgets for film industry-specific data entry.
+
+Authentication and Permissions:
+- Implement JWT authentication for API access.
+- Use Django's built-in authentication for web interface.
+- Create custom permissions for different roles in film production (e.g., director, cinematographer, producer).
+
+Database and Query Optimization:
+- Use select_related() and prefetch_related() to optimize database queries.
+- Implement database indexing for frequently queried fields.
+- Use Django's F() expressions to avoid race conditions in updates.
+
+Celery Tasks:
+- Utilize Celery for handling background tasks like PDF generation or email notifications.
+- Implement periodic tasks for data maintenance or automated reports.
+
+Testing:
+- Write comprehensive unit tests for models, views, and API endpoints.
+- Use Django's TestCase for database-related tests.
+- Implement integration tests for critical cinematography workflows.
+
+Security:
+- Implement robust security measures using Django's built-in security features.
+- Use environment variables for sensitive information (e.g., SECRET_KEY, database credentials).
+- Implement proper CORS settings for API access.
+
+Key Features to Implement:
+1. Script breakdown and analysis tools
+2. Shot list creation and management
+3. Storyboard integration and AI-driven storyboard creation
+4. Equipment and resource management
+5. Collaborative tools for film production teams
+6. Dashboard for project overview and progress tracking
+7. RESTful API for integration with other film production tools
+
+Performance Optimization:
+- Use Django's caching framework to cache expensive computations or frequent database queries.
+- Implement database query optimization techniques (e.g., indexing, query annotations).
+- Use Django Debug Toolbar during development to identify and resolve performance bottlenecks.
+
+Deployment:
+- Configure Django settings for production environments.
+- Use Gunicorn as the WSGI HTTP server.
+- Implement proper static file handling with WhiteNoise or a CDN.
+
+Documentation:
+- Use Django's built-in admin documentation generator.
+- Create API documentation using tools like drf-yasg or Django REST Swagger.
+- Develop user guides tailored to different roles in film production.
+
+Refer to Django and Django REST Framework documentation for detailed information
+on best practices and advanced features. Additionally, consult film industry
+resources for accurate implementation of cinematography workflows and terminology.
+
+Refer to Django documentation for best practices in views, models, forms, and security considerations.
+
+
+"""
