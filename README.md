@@ -35,10 +35,10 @@ cineos is a comprehensive SaaS application designed specifically for cinematogra
 ```bash
 mkdir -p ~/dev/cineos
 cd ~/dev/cineos
-
+git clone https://github.com/yourusername/cineos.git .
 ```
 
-### Create and Activate Virtual Environment
+## Create and Activate Virtual Environment
 
 *macOS/Linux*
 ```bash
@@ -55,6 +55,7 @@ python -m venv venv
 ### Install Dependencies
 
 ```bash
+brew install python
 pip install --upgrade pip
 pip install -r requirements.txt
 ```
